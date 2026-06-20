@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Screen output and keyboard input</title> 
+  <style type="text/css"> 
+    #btn{ 
+       border-radius: 5px; 
+       height: 30px; 
+       width: 70px; 
+     } 
+     #btn:hover{ 
+       height: 50px; 
+       width: 100px; 
+    } 
+  </style> 
+</head> 
+<body> 
+   <button onclick="myFunction()" id="btn">click</button> 
+   <p id="demo"></p> 
+   <button onclick="myFunction1()" id="btn">Prompt</button> 
+   <p id="demo1"></p> 
+  <script type="text/javascript"> 
+    function myFunction(){ 
+       var num1=45; 
+       var num2=89; 
+       var sum=num1+num2; 
+      document.getElementById('demo').innerHTML="The sum of num1 and num2 is "+sum; 
+    } 
+     var num1=50; 
+     var num2=100; 
+     var sum=num1+num2; 
+     document.write(sum); 
+     function myFunction1(){ 
+       var str1=prompt("Enter first number ",""); 
+       var str2=prompt("Enter second number ",""); 
+       var sum1=str1+str2; 
+       window.alert("The sum is "+sum1); 
+    } 
+  </script> </body></html> 

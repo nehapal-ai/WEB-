@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgb(81, 153, 153);
+    }
+
+     td {
+      padding: 12px 15px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    th {
+       padding: 12px 15px;
+      background-color: #4caf93;
+      color: white;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 90%;
+    }
+
+    input[type="submit"] {
+      background-color: #4c81af;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+     input[type="reset"] {
+      background-color: #4c81af;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+
+    select {
+      padding: 5px;
+      width: 90%;
+    }
+  </style>
+</head>
+<body>
+      <form>
+        <table>
+          <tr>
+            <th colspan="3">Fill the Form</th></tr>
+          </tr>
+        <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr rowspan="2">
+        <td>
+          <label for ="Password"> Password:</label><br></td>
+          <td>
+         <input type="text" id="Password" name="Password">
+        </td>
+       </tr>
+       <tr>
+          <td>Gender</td>
+          <td>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="others"> Others</label>
+        </td>
+        </tr>
+        <tr>
+          <td>Subject:</td>
+          <td>
+            <label><input type="checkbox" name="Subject" value="Web">Web</label>
+            <label><input type="checkbox" name="Subject" value="C++">C++ </label>
+            <label><input type="checkbox" name="Subject" value="C">C</label>
+            <label><input type="checkbox" name="Subject" value="C#">C# </label>
+        </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2" class="button">
+                <input type="reset" value="Reset All" >
+                <input type="submit" value="submit" >
+
+            </td>
+        </tr>
+      </form>
+  </table>
+
+</body>
+</html>
